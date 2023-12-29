@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDOPS</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 0;
+            background-color:  #e7e9eb;
+            color: #abb2bf;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #e7e9eb;
+            color: #000000;
+            padding: 1em;
+            text-align: center;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 2em;
+            background-color: #1e1e1e;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+           
+
+        }
+
+        h1, h2 {
+            color: #61dafb;
+        }
+
+        code {
+            color: #61dafb;
+        }
+
+        p, ul {
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color:  #e7e9eb;
+            color: #000000;
+            text-align: left;
+            padding: 1em;
+            position: fixed;
+            width: 200px;
+            height:20px;
+            bottom: 0;
+            font-size: xx-small;
+           
+        }
+
+        .popup {
+            /* display: none; */
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px;
+            background-color: #25d366;
+            color: #ffffff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .popup1 {
+            /* display: none; */
+            position: fixed;
+            bottom: 70px;
+            right: 20px;
+            padding: 10px;
+            background-color: #25d366;
+            color: #ffffff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Responsive Styles */
+        @media only screen and (max-width: 600px) {
+            section {
+                padding: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" style="width:300px">
+        <p>--------------------------------</p>
+    </header>
+
+    <section>
+        <h2>About Us</h2>
+        <p>
+            At CrudOps, we are passionate about writing elegant and efficient code. 
+            Our team of developers is dedicated to creating innovative solutions that transform your visions into reality.
+        </p>
+    </section>
+
+    <section>
+        <h2>Services</h2>
+        <ul>
+            <li>Full Stack Development</li>
+            <li>Code Review and Optimization</li>
+            <li>DevOps and Continuous Integration</li>
+            <li>Agile Project Management</li>
+            <!-- Add more services as needed -->
+        </ul>
+    </section>
+
+    <section>
+        <h2>Contact Us</h2>
+        <p>
+            Ready to start your next project? Let's collaborate and write code that makes a difference.
+        </p>
+        <p>Email: <code>info@crudops.tech</code></p>
+
+        <div id="whatsappPopup" class="popup" onclick="openWhatsApp()">
+            WhatsApp Us
+        </div>
+        <br>
+        <!-- Call Popup -->
+        <div id="callPopup" class="popup1" onclick="makeCall()">
+            Call Us
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy;  CRUDOPS LTD. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Function to open WhatsApp
+        function openWhatsApp() {
+            window.open('https://api.whatsapp.com/send?phone=6238575185', '_blank');
+        }
+
+        // Function to make a call
+        function makeCall() {
+            window.location.href = 'tel:+916238575185'; 
+        }
+    </script>
+
+</body>
+</html>
